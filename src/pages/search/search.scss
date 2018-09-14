@@ -1,0 +1,34 @@
+page-search ion-content{
+  background: #434a56 !important;
+}
+
+ion-title{
+  color: white;
+  font-size: 14px;
+}
+
+page-search button{
+  background: none;
+}
+
+page-search ion-list, page-search ion-item, page-search div[ion-item]{
+  background: none !important;
+}
+
+page-search .item-inner{
+  border: none !important;
+}
+
+page-search div[ion-item] ion-label{
+  white-space: pre-line;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+ion-searchbar{
+  background: none !important;
+}
+
+.toolbar .searchbar-ios .searchbar-input{
+  background: #fff;
+}

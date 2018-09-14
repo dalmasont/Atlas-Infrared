@@ -1,0 +1,50 @@
+page-thermo ion-content{
+  background: #434a56 !important;
+}
+
+ion-title{
+  color: white;
+  font-size: 14px;
+}
+
+page-thermo button{
+  background: none;
+}
+
+page-thermo ion-content #sketch{
+  width: 100%;
+  min-height: 200px;
+  object-fit: contain;
+  border: none !important;
+  background: none !important;
+}
+
+page-thermo ion-content canvas{
+  width: 100%;
+}
+
+page-thermo .item{
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-width: 1px 0 0 0;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background: none;
+}
+
+page-thermo .item-inner{
+  border: none !important;
+}
+
+page-thermo ion-label{
+  color: #eee;
+}
+
+page-thermo ion-select{
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-width: 0 0 0 1px;
+}
+
+page-thermo ion-select .select-text{
+  padding-right: 0.3em;
+  color: #fff;
+}

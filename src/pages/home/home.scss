@@ -1,0 +1,94 @@
+ion-header{
+  box-shadow: none;
+}
+
+page-home ion-content{
+  background: url('../assets/imagens/bgHeader.png') no-repeat center top;
+  background-size: 100% auto;
+}
+
+page-home button{
+  background: none;
+  color: #fff;
+}
+
+page-home ion-title{
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.body_container{
+  // border: 1px solid red;
+  position: absolute;
+  width: 66%;
+  left: 17%;
+  height: 90%;
+  top: 7%;
+}
+
+.body_container .body{
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 6px;
+}
+
+.body_container .btn{
+  // border: 1px solid blue;
+  position: absolute;
+  width: 70%;
+  height: 7%;
+  padding: 0;
+}
+
+.body_container .cabeca{
+  top: 0%;
+  left: 50%;
+}
+
+.body_container .torax{
+  top: 20%;
+  left: 55%;
+}
+
+.body_container .pelve{
+  top: 42%;
+  left: 49%;
+  width: 76%;
+  height: 8%;
+}
+
+.body_container .membros_superiores{
+  top: 33%;
+  left: -15%;
+  width: 95%;
+  height: 12%;
+}
+
+.body_container .membros_inferiores{
+  top: 68%;
+  left: -25%;
+  width: 94%;
+  height: 13%;
+}
+
+.body_container .btn .img{
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+.no-scroll {
+  .scroll-content {
+    overflow: hidden !important;
+  }
+}

@@ -1,0 +1,72 @@
+page-findClinicas ion-content{
+  background: #434a56 !important;
+}
+
+ion-title{
+  color: white;
+  font-size: 14px;
+}
+
+page-findClinicas button{
+  background: none;
+}
+
+page-findClinicas ion-list, page-findClinicas div[ion-item]{
+  background: none !important;
+}
+
+page-findClinicas div[ion-item]:first-child{
+  border-top: 1px solid #3b414c !important;
+  padding-top: 1em !important;
+  margin-top: 0.4em !important;
+}
+
+page-findClinicas div[ion-item]{
+  border-bottom: 1px solid #3b414c !important;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  padding-top: 0em !important;
+}
+
+page-findClinicas div[ion-item] ion-label{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  color: #ccc;
+}
+
+page-findClinicas div[ion-item] .top{
+  white-space: pre-line;
+  font-weight: bold;
+}
+
+page-findClinicas div[ion-item] .body{
+  display: table;
+  white-space: pre-line;
+  padding-top: 0.7em;
+  padding-bottom: 0.4em;
+}
+
+page-findClinicas div[ion-item] .body .conteudo ion-icon{
+  margin-right: 0.3em !important;
+}
+
+page-findClinicas div[ion-item] .body .conteudo{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 0.9em;
+}
+
+page-findClinicas div[ion-item] .footer{
+  white-space: pre-line;
+  font-size: 0.8em;
+  color: #aaa !important;
+}
+
+page-findClinicas .item-inner{
+  border: none !important;
+}
+
+ion-searchbar{
+  background: none !important;
+  border-bottom: none !important;
+}

@@ -1,0 +1,44 @@
+<ion-menu [content]="menuContent" side="left" type="overlay">
+  <ion-header no-border>
+    <ion-toolbar transparent>
+      <ion-buttons left>
+        <button menuToggle>
+          <img src="./assets/imagens/iconMenuOut.png" width="20">
+        </button>
+      </ion-buttons>
+      <ion-title>MENU</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list>
+      <div tappable ion-item *ngFor="let p of pages" (click)="openPage(p)" menuToggle>
+        <img src="./assets/imagens/{{p.icon}}.png" width="20">
+          {{p.title}}
+      </div>
+      <div tappable ion-item (click)="openLink('http://infraredmed.com/sobre-nos/')" menuToggle>
+        <ion-icon name="information-circle" style="margin-right: 10px;"></ion-icon>
+          SOBRE NÓS
+      </div>
+      <div tappable ion-item (click)="openLink('http://infraredmed.com/termografia/')" menuToggle>
+        <ion-icon name="help-circle" style="margin-right: 10px;"></ion-icon>
+          TERMOGRAFIA
+      </div>
+      <div tappable ion-item (click)="openLink('http://infraredmed.com/servicos/')" menuToggle>
+        <ion-icon name="albums" style="margin-right: 10px;"></ion-icon>
+          SERVIÇOS
+      </div>
+      <div tappable ion-item (click)="openLink('http://thermofy.com')" menuToggle>
+        <ion-icon name="md-globe" style="margin-right: 10px;"></ion-icon>
+          Thermofy
+      </div>
+    </ion-list>
+    <ion-title class="bottom">
+      InfraredMed Atlas - 2017<br>
+      com contribuição da Thermofy
+    </ion-title>
+  </ion-content>
+
+</ion-menu>
+
+<ion-nav #menuContent [root]="rootPage"></ion-nav>

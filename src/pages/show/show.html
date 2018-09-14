@@ -1,0 +1,39 @@
+<ion-header no-border>
+  <ion-toolbar transparent>
+    <ion-buttons left>
+      <button (click)="back();">
+        <ion-icon>
+          <img src="./assets/imagens/backButton.png" width="25">
+        </ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{nameKey}}</ion-title>
+    <ion-buttons right>
+      <button (click)="favorite();" id="favorite" class="{{fav}}">
+        <ion-icon>
+          <img class="favorite_off" src="./assets/imagens/iconStarOff.png" width="25">
+          <img class="favorite_on" src="./assets/imagens/iconStarOn.png" width="25">
+        </ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div class="header" no-border>
+    <div class="conteudo">
+      <button ion-button icon-right (click)="share();">
+        Compartilhe com amigos
+        <img src="./assets/imagens/iconShare.png">
+      </button>
+    </div>
+  </div>
+  <ion-list>
+    <div tappable ion-item *ngFor="let img of images" no-border (click)="show_termo(img)">
+      <img src="{{img}}" alt="">
+    </div>
+  </ion-list>
+  <img class="iconInfo" src="./assets/imagens/iconInfo.png">
+  <ion-label>
+    O conteúdo deste App é de caráter educativo e não deve ser considerado consulta médica, provável diagnóstico ou tratamento recomendado. Todas as imagens com pacientes e terceiros têm sua autorização escrita.
+  </ion-label>
+</ion-content>

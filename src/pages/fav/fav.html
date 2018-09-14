@@ -1,0 +1,21 @@
+<ion-header no-border>
+  <ion-toolbar transparent>
+    <ion-buttons left>
+      <button menuToggle>
+        <img src="./assets/imagens/iconMenu.png" width="20">
+      </button>
+    </ion-buttons>
+    <ion-title>FAVORITOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <div tappable ion-item *ngFor="let item of items" (click)="clickItem(item[1], item[0], item[2])" no-border>
+      {{ item[0] }}
+      <ion-icon item-right>
+        <img src="./assets/imagens/icon{{item[2]}}.png" width="20">
+      </ion-icon>
+    </div>
+  </ion-list>
+</ion-content>

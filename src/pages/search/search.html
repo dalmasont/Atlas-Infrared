@@ -1,0 +1,38 @@
+<ion-header no-border>
+  <!-- <ion-navbar transparent> -->
+
+    <!-- <ion-buttons left>
+      <button menuToggle right>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+    <!-- <ion-title>
+      {{this.currentPageName}}
+    </ion-title>
+  </ion-navbar> -->
+  <ion-toolbar transparent>
+    <ion-searchbar (ionInput)="getItems($event)" placeholder="Pesquise aqui.."
+    [showCancelButton]="shouldShowCancel"
+    (ionCancel)="cancel()"></ion-searchbar>
+    <ion-buttons right>
+      <button (click)="cancel();">
+        <ion-icon>
+          <img src="./assets/imagens/buttonClose.png" width="25">
+        </ion-icon>
+      </button>
+    </ion-buttons>
+    <!-- <ion-title>{{this.currentPageName}}</ion-title> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <div tappable ion-item *ngFor="let item of items" no-border (click)="clickItem(item[1], item[0], item[2])">
+      {{ item[0] }}
+      <ion-icon item-right>
+        <img src="./assets/imagens/icon{{item[2]}}.png" width="20">
+      </ion-icon>
+    </div>
+  </ion-list>
+</ion-content>

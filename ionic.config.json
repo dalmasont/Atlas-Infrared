@@ -1,0 +1,10 @@
+{
+  "name": "app3",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "v2": true,
+  "typescript": true,
+  "pro_id": "f7327a07"
+}

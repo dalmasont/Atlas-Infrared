@@ -1,0 +1,23 @@
+<ion-header no-border>
+  <ion-toolbar transparent>
+    <ion-buttons left>
+      <button (click)="back();">
+        <ion-icon>
+          <img src="./assets/imagens/backButton.png" width="25">
+        </ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>CLÍNICAS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list>
+    <div tappable ion-item *ngFor="let item of items" no-border>
+      <div class="top">{{ item[0] }}</div>
+      <div class="body"><div class="conteudo"><ion-icon name="ios-pin"></ion-icon>{{ item[1] }} {{ item[2] }} {{ item[3] }}</div></div>
+      <div class="footer">{{ item[4] }}<br>{{ item[5] }}</div>
+    </div>
+  </ion-list>
+</ion-content>

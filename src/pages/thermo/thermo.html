@@ -1,0 +1,40 @@
+<ion-header no-border>
+  <ion-toolbar transparent>
+    <ion-buttons left>
+      <button (click)="back();">
+        <ion-icon>
+          <img src="./assets/imagens/backButton.png" width="25">
+        </ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>{{nameKey}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding>
+  <div id="sketch" drawing image="vm.image" pallete="vm.pallete" min="vm.minTemp" max="vm.maxTemp">
+    <canvas id="canvasId"></canvas>
+  </div>
+  <br>
+  <ion-item>
+    <ion-label>Temperaturas</ion-label>
+    <ion-range min="{{vm.minTemp}}" max="{{vm.maxTemp}}" step="1" snaps="true" color="secondary" (ionChange)="minTempRange($event)">
+      <ion-icon range-right name="ios-thermometer" color="light"></ion-icon>
+    </ion-range>
+    <ion-range min="{{vm.minTemp}}" max="{{vm.maxTemp}}" step="1" snaps="true" color="secondary" (ionChange)="maxTempRange($event)" [(ngModel)]="currentMaxTemp">
+      <ion-icon range-right name="ios-thermometer" color="light"></ion-icon>
+    </ion-range>
+  </ion-item>
+  <ion-item>
+    <ion-label>Filtros</ion-label>
+    <ion-select [(ngModel)]="pallets" (ionChange)="atlasChange($event)">
+      <ion-option value="Arctic" selected="true">Arctic</ion-option>
+      <ion-option value="Cool">Cool</ion-option>
+      <ion-option value="Gray">Gray</ion-option>
+      <ion-option value="Iron">Iron</ion-option>
+      <ion-option value="Lava">Lava</ion-option>
+      <ion-option value="Rainbow HC">Rainbow HC</ion-option>
+      <ion-option value="Rainbow">Rainbow</ion-option>
+      <ion-option value="Warm">Warm</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

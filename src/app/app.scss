@@ -1,0 +1,64 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// body{
+//   background: url("https://www.sketchappsources.com/resources/source-image/music-app-designedbywolf.jpg") no-repeat center top fixed;
+//   background-size: 100% auto;
+// }
+
+.menu-inner{
+  background: #3e4955 !important;
+}
+
+ion-menu ion-content, ion-menu ion-list, ion-menu button, ion-menu ion-item, div[ion-item]{
+  background: transparent!important;
+}
+
+.toolbar-title{
+  color: white;
+  font-size: 14px;
+}
+
+ion-list div[ion-item]{
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: lightgray !important;
+  font-weight: 200 !important;
+  border: 1px solid #37404c !important;
+  border-width: 0 0 1px 0 !important;
+}
+
+ion-list div[ion-item] img{
+  margin-right: 10px;
+}
+
+ion-title.bottom{
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  white-space: pre-line;
+}
+
+ion-title.bottom .toolbar-title{
+  font-weight: 200 !important;
+  color: lightgray !important;
+  text-align: center;
+}
+
+div[ion-item] .item-inner{
+  border: none !important;
+}
